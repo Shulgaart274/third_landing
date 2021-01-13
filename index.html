@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>third landing with sass</title>
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav__container">
+          <div class="nav__logo">
+            <a href="#!"
+              ><img src="img/navbar_logo.svg" alt="Messy.fm" class="nav__img"
+            /></a>
+          </div>
+          <div class="nav__menu">
+            <ul class="nav__menu-list">
+              <li class="nav__menu-item">
+                <div class="nav__menu-submenu-item">
+                  <a class="nav__menu-link" href="#!">About</a>
+                </div>
+              </li>
+              <li class="nav__menu-item">
+                <div class="nav__menu-submenu-item">
+                  <a class="nav__menu-link" href="#!">Book a Demo</a>
+                </div>
+              </li>
+              <li class="nav__menu-item">
+                <div class="nav__menu-submenu-item">
+                  <a class="nav__menu-link" href="#!">Sign In</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="main__container">
+          <section class="title">
+            <h1 class="title__text">Messy.fm Public Podcasts</h1>
+            <div class="title__inputs">
+              <form class="title__form">
+                <div class="title__input input__first">
+                  <select name="role" id="dropdown" class="form__control">
+                    <option value disabled selected>Categories</option>
+                    <option value="business">Business</option>
+                    <option value="education">Education</option>
+                    <option value="arts">Arts</option>
+                    <option value="leisure">Leisure</option>
+                    <option value="government">Government</option>
+                    <option value="health-and-fitness">Health & Fitness</option>
+                    <option value="kids-and-family">Kids & Family</option>
+                    <option value="music">Music</option>
+                    <option value="news">News</option>
+                    <option value="religion-and-spirituality">
+                      Religion & Spirituality
+                    </option>
+                    <option value="science">Science</option>
+                    <option value="society-and-culture">
+                      Society & Culture
+                    </option>
+                  </select>
+                </div>
+                <div class="title__input input__second">
+                  <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="form__control"
+                    placeholder="Search for Podcasts"
+                  />
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="trendings">
+            <div class="trendings__container">
+              <h2 class="trendings__title">Top & Trending Episodes</h2>
+
+              <div class="trendings__cards">
+                <div class="trendings__card">
+                  
+                    <img
+                      class="trendings__img"
+                      src="/img/green.png"
+                      alt="green"
+                    />
+                    <div class="trendings__shadow">
+                        <div class="trendings__icon"></div>
+                  </div>
+                  <h4>Episode 9</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img
+                      class="trendings__img"
+                      src="/img/blooms.jpeg"
+                      alt="blooms"
+                    />
+                  </div>
+                  <h4>Is your girl squad to small?</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img class="trendings__img" src="/img/cabinet.png" alt="" />
+                  </div>
+                  <h4>The holotype Specimen</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img class="trendings__img" src="/img/brown.png" alt="" />
+                  </div>
+                  <h4>Season 10 Episode 1: "The Cabin In The Woods"(2011)</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img class="trendings__img" src="/img/yellow.png" alt="" />
+                  </div>
+                  <h4>Roles in 2021</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img
+                      class="trendings__img"
+                      src="/img/books.jpeg"
+                      alt="books"
+                    />
+                  </div>
+                  <h4>"Just JAZZ" - Set 73</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img
+                      class="trendings__img"
+                      src="/img/runway.jpeg"
+                      alt="runway"
+                    />
+                  </div>
+                  <h4>Overcoming Postpartum Depression & Anexiety</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img
+                      class="trendings__img"
+                      src="/img/robotics.jpeg"
+                      alt="robotics"
+                    />
+                  </div>
+                  <h4>
+                    Taskin Padir, Associate Professor & Founding Director,
+                    Institute for Experimental Robotics
+                  </h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img
+                      class="trendings__img"
+                      src="/img/catolics.jpeg"
+                      alt="catolics"
+                    />
+                  </div>
+                  <h4>Why don't Catholics believe Sola Scriptura?</h4>
+                </div>
+
+                <div class="trendings__card">
+                  <div class="trendings__shadow">
+                    <img
+                      class="trendings__img"
+                      src="/img/littleguy.jpeg"
+                      alt="littleguy"
+                    />
+                  </div>
+                  <h4>We want it all, At The Expense of All</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </header>
+  </body>
 </html>

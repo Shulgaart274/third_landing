@@ -133,4 +133,158 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #dfe2e6;
+}
+.navbar .nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1152px;
+  margin: 0 auto;
+  height: 4rem;
+}
+.navbar .nav__img {
+  height: 1.5rem;
+}
+.navbar .nav__menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav__menu-item {
+  padding: 0 15px;
+}
+.navbar .nav__menu-item::before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #4463ec;
+  transition: width 0s ease-in-out;
+  left: 0;
+  bottom: 3px;
+}
+.navbar .nav__menu-item:hover {
+  transform: translateY(2%);
+}
+.navbar .nav__menu-item:hover::before {
+  width: 100%;
+}
+.navbar .nav__menu-submenu-item {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.navbar .nav__menu-link {
+  position: relative;
+  color: #8073c0;
+  margin: 0px 0px 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.navbar .nav__menu-link:hover {
+  color: #4463ec;
+}
+
+.main {
+  background-color: #eee;
+}
+.main .main__container {
+  max-width: 1216px;
+  background-color: #f2f4f9;
+  margin: 0 auto;
+}
+.main .title {
+  padding: 3rem 2rem;
+}
+.main .title__text {
+  font-size: 3rem;
+  line-height: 56px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.main .title__form {
+  display: flex;
+  justify-content: space-between;
+}
+.main .input__first {
+  width: 65%;
+}
+.main .input__second {
+  width: 32%;
+  display: flex;
+  justify-content: flex-end;
+}
+.main input,
+.main select {
+  margin: 0;
+  font-family: inherit;
+  line-height: inherit;
+}
+.main input,
+.main select {
+  transition: all 0.3 ease-in-out;
+  outline: none;
+  border: 1px solid #dddddd;
+}
+.main input:focus,
+.main select:focus {
+  box-shadow: 0 0 5px #519aee;
+  border: 1px solid #519aee;
+}
+.main .form__control {
+  display: block;
+  height: 30px;
+  padding: 0 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.main #dropdown {
+  min-width: 270px;
+}
+.main #search {
+  min-width: 340px;
+}
+.main .trendings__container {
+  padding: 1rem 2rem;
+}
+.main .trendings__title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.main .trendings__cards {
+  display: grid;
+  gap: 30px 14px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.main .trendings__card {
+  grid-column: span 1;
+  position: relative;
+}
+.main .trendings__img {
+  height: 205px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
