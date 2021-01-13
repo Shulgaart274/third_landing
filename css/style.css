@@ -286,5 +286,8 @@ body {
   height: 205px;
   width: 100%;
 }
+.main .trendings__img:hover {
+  filter: brightness(0.4);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -181,4 +181,8 @@ body {
     height: 205px;
     width: 100%;
   }
+
+  .trendings__img:hover {
+    filter: brightness(0.4);
+  }
 }
