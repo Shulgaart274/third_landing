@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="navbar">
         <div class="nav__container">
           <div class="nav__logo">
@@ -41,56 +41,54 @@
           </div>
         </div>
       </nav>
+    </header>
 
-      <main class="main">
-        <div class="main__container">
-          <section class="title">
-            <h1 class="title__text">Messy.fm Public Podcasts</h1>
-            <div class="title__inputs">
-              <form class="title__form">
-                <div class="title__input input__first">
-                  <select name="role" id="dropdown" class="form__control">
-                    <option value disabled selected>Categories</option>
-                    <option value="business">Business</option>
-                    <option value="education">Education</option>
-                    <option value="arts">Arts</option>
-                    <option value="leisure">Leisure</option>
-                    <option value="government">Government</option>
-                    <option value="health-and-fitness">Health & Fitness</option>
-                    <option value="kids-and-family">Kids & Family</option>
-                    <option value="music">Music</option>
-                    <option value="news">News</option>
-                    <option value="religion-and-spirituality">
-                      Religion & Spirituality
-                    </option>
-                    <option value="science">Science</option>
-                    <option value="society-and-culture">
-                      Society & Culture
-                    </option>
-                  </select>
-                </div>
-                <div class="title__input input__second">
-                  <input
-                    type="text"
-                    name="search"
-                    id="search"
-                    class="form__control"
-                    placeholder="Search for Podcasts"
-                  />
-                </div>
-              </form>
-            </div>
-          </section>
+    <main class="main">
+      <div class="main__container">
+        <section class="title">
+          <h1 class="title__text">Messy.fm Public Podcasts</h1>
+          <div class="title__inputs">
+            <form class="title__form">
+              <div class="title__input input__first">
+                <select name="role" id="dropdown" class="form__control">
+                  <option value disabled selected hidden>Categories</option>
+                  <option value="business">Business</option>
+                  <option value="education">Education</option>
+                  <option value="arts">Arts</option>
+                  <option value="leisure">Leisure</option>
+                  <option value="government">Government</option>
+                  <option value="health-and-fitness">Health & Fitness</option>
+                  <option value="kids-and-family">Kids & Family</option>
+                  <option value="music">Music</option>
+                  <option value="news">News</option>
+                  <option value="religion-and-spirituality">
+                    Religion & Spirituality
+                  </option>
+                  <option value="science">Science</option>
+                  <option value="society-and-culture">Society & Culture</option>
+                </select>
+              </div>
+              <div class="title__input input__second">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  class="form__control"
+                  placeholder="Search for Podcasts"
+                />
+              </div>
+            </form>
+          </div>
+        </section>
 
-          <section class="trendings">
-            <div class="trendings__container">
-              <h2 class="trendings__title">Top & Trending Episodes</h2>
+        <section class="trendings">
+          <div class="trendings__container">
+            <h2 class="trendings__title">Top & Trending Episodes</h2>
 
-              <div class="trendings__cards">
-
-                <div class="trendings__card">
+            <div class="trendings__cards">
+              <div class="trendings__card">
                 <a href="#!">
-                 <div class="trendings__card-cover">
+                  <div class="trendings__card-cover">
                     <img
                       class="trendings__img"
                       src="/img/green.png"
@@ -99,19 +97,17 @@
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
+                    </div>
                   </div>
 
-                  </div>
-                
-                   
                   <h4 class="trendings__card-desc">Episode 9</h4>
                 </a>
-                </div>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
                     <img
                       class="trendings__img"
@@ -121,66 +117,65 @@
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
-                  
-                   </div>
+                    </div>
                   </div>
-                  <h4 class="trendings__card-desc">Is your girl squad to small?</h4>
-                  </a>
-                </div>
+                  <h4 class="trendings__card-desc">
+                    Is your girl squad to small?
+                  </h4>
+                </a>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
                     <img class="trendings__img" src="/img/cabinet.png" alt="" />
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
                     </div>
-
                   </div>
-                  
-                  <h4 class="trendings__card-desc">The holotype Specimen</h4>
-                  </a>
-                </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+                  <h4 class="trendings__card-desc">The holotype Specimen</h4>
+                </a>
+              </div>
+
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
                     <img class="trendings__img" src="/img/brown.png" alt="" />
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
+                    </div>
                   </div>
-                </div>
-                  <h4 class="trendings__card-desc">Season 10 Episode 1: "The Cabin In The Woods"(2011)</h4>
-                 
-                 </a>
-                </div>
+                  <h4 class="trendings__card-desc">
+                    Season 10 Episode 1: "The Cabin In The Woods"(2011)
+                  </h4>
+                </a>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
-                 
                     <img class="trendings__img" src="/img/yellow.png" alt="" />
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
-                  </div>
+                    </div>
                   </div>
                   <h4 class="trendings__card-desc">Roles in 2021</h4>
-                
-              </a>
-                </div>
+                </a>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
                     <img
                       class="trendings__img"
@@ -190,20 +185,17 @@
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
-                  </div>
+                    </div>
                   </div>
                   <h4 class="trendings__card-desc">"Just JAZZ" - Set 73</h4>
-                
-                  </a>
-                  </div>
+                </a>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
-
-
                     <img
                       class="trendings__img"
                       src="/img/runway.jpeg"
@@ -212,17 +204,18 @@
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
+                    </div>
                   </div>
-                  </div>
-                  <h4 class="trendings__card-desc">Overcoming Postpartum Depression & Anexiety</h4>
-                
-                  </a>
-                </div>
+                  <h4 class="trendings__card-desc">
+                    Overcoming Postpartum Depression & Anexiety
+                  </h4>
+                </a>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
                     <img
                       class="trendings__img"
@@ -232,22 +225,20 @@
 
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
-                  </div>
+                    </div>
                   </div>
                   <h4 class="trendings__card-desc">
                     Taskin Padir, Associate Professor & Founding Director,
                     Institute for Experimental Robotics
                   </h4>
-                
                 </a>
-                </div>
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
-                  
                     <img
                       class="trendings__img"
                       src="/img/catolics.jpeg"
@@ -255,20 +246,19 @@
                     />
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
-
+                    </div>
                   </div>
-                </div>
-                  <h4 class="trendings__card-desc">Why don't Catholics believe Sola Scriptura?</h4>
+                  <h4 class="trendings__card-desc">
+                    Why don't Catholics believe Sola Scriptura?
+                  </h4>
                 </a>
-                </div>
-                
+              </div>
 
-                <div class="trendings__card">
-                  <a href="#!">
+              <div class="trendings__card">
+                <a href="#!">
                   <div class="trendings__card-cover">
-                 
                     <img
                       class="trendings__img"
                       src="/img/littleguy.jpeg"
@@ -276,20 +266,253 @@
                     />
                     <div class="cover">
                       <div class="cover-img">
-                          <img src="img/play-circle.svg" alt="arrow" >
+                        <img src="img/play-circle.svg" alt="arrow" />
                       </div>
-
+                    </div>
                   </div>
-                  </div>
-                  <h4 class="trendings__card-desc">We want it all, At The Expense of All</h4>
-                  </a>
-                </div>
-
+                  <h4 class="trendings__card-desc">
+                    We want it all, At The Expense of All
+                  </h4>
+                </a>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
+
+        <section class="shows">
+          <div class="shows__container">
+            <h2 class="shows__title">Can't Miss Shows</h2>
+
+            <div class="shows__cards">
+              <div class="shows__card">
+                <a href="#!">
+                  <div class="shows__card-cover">
+                    <img
+                      class="shows__img"
+                      src="/img/thirdspace.png"
+                      alt="Third Space"
+                    />
+                  </div>
+                  <h4 class="shows__card-desc">
+                    Third Space Thoughts To Policy
+                  </h4>
+                </a>
+              </div>
+
+              <div class="shows__card">
+                <a href="#!">
+                  <div class="shows__card-cover">
+                    <img
+                      class="shows__img"
+                      src="/img/afterparty.jpeg"
+                      alt="The After Party"
+                    />
+                  </div>
+                  <h4 class="shows__card-desc">The After Party</h4>
+                </a>
+              </div>
+
+              <div class="shows__card">
+                <a href="#!">
+                  <div class="shows__card-cover">
+                    <img
+                      class="shows__img"
+                      src="/img/over50.png"
+                      alt="Funny Over 50"
+                    />
+                  </div>
+                  <h4 class="shows__card-desc">Funny Over 50</h4>
+                </a>
+              </div>
+
+              <div class="shows__card">
+                <a href="#!">
+                  <div class="shows__card-cover">
+                    <img
+                      class="shows__img"
+                      src="/img/watchchat.png"
+                      alt="Watch Chat Repeat"
+                    />
+                  </div>
+                  <h4 class="shows__card-desc">Watch Chat Repeat</h4>
+                </a>
+              </div>
+
+              <div class="shows__card">
+                <a href="#!">
+                  <div class="shows__card-cover">
+                    <img
+                      class="shows__img"
+                      src="/img/eye.jpeg"
+                      alt="The Broken Lords"
+                    />
+                  </div>
+                  <h4 class="shows__card-desc">The Broken Lords</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="lastepisodes">
+          <div class="lastepisodes__container">
+            <h2 class="lastepisodes__title">
+              Latest Episodes from Messy Podcasters
+            </h2>
+
+            <div class="lastepisodes__cards">
+              <div class="lastepisodes__card">
+                <a href="#!">
+                  <div class="lastepisodes__card-cover">
+                    <img
+                      class="lastepisodes__img"
+                      src="/img/femkajirnaya.jpeg"
+                      alt="femkajirnaya"
+                    />
+                    <div class="cover">
+                      <div class="cover-img">
+                        <img src="img/play-circle.svg" alt="arrow" />
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="lastepisodes__card-desc">Testing Out Zoom</h4>
+                </a>
+              </div>
+
+              <div class="lastepisodes__card">
+                <a href="#!">
+                  <div class="lastepisodes__card-cover">
+                    <img
+                      class="lastepisodes__img"
+                      src="/img/fishbytes.jpeg"
+                      alt="fishbytes"
+                    />
+                    <div class="cover">
+                      <div class="cover-img">
+                        <img src="img/play-circle.svg" alt="arrow" />
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="lastepisodes__card-desc">
+                    Badfeathers "Stir it up"
+                  </h4>
+                </a>
+              </div>
+
+              <div class="lastepisodes__card">
+                <a href="#!">
+                  <div class="lastepisodes__card-cover">
+                    <img
+                      class="lastepisodes__img"
+                      src="/img/heartstoners.jpeg"
+                      alt="heartstoners"
+                    />
+                    <div class="cover">
+                      <div class="cover-img">
+                        <img src="img/play-circle.svg" alt="arrow" />
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="lastepisodes__card-desc">NBA 2020-21 Preview</h4>
+                </a>
+              </div>
+
+              <div class="lastepisodes__card">
+                <a href="#!">
+                  <div class="lastepisodes__card-cover">
+                    <img
+                      class="lastepisodes__img"
+                      src="/img/fishbytes.jpeg"
+                      alt="fishbytes"
+                    />
+                    <div class="cover">
+                      <div class="cover-img">
+                        <img src="img/play-circle.svg" alt="arrow" />
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="lastepisodes__card-desc">Superman</h4>
+                </a>
+              </div>
+
+              <div class="lastepisodes__card">
+                <a href="#!">
+                  <div class="lastepisodes__card-cover">
+                    <img
+                      class="lastepisodes__img"
+                      src="/img/littleguy.jpeg"
+                      alt="littleguy"
+                    />
+                    <div class="cover">
+                      <div class="cover-img">
+                        <img src="img/play-circle.svg" alt="arrow" />
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="lastepisodes__card-desc">
+                    We want it all, At The Expense of All
+                  </h4>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button><img src="/img/arrow.svg" /></button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__wrap">
+          <div class="footer__top-sec">
+            <div class="footer__logo">
+              <img
+                src="img/footer_logo.svg"
+                class="footer__img"
+                alt="footer_logo"
+              />
+            </div>
+
+            <div class="footer__top-right">
+              <div class="footer__links">
+                <p class="footer__link"><a href="#!">About</a></p>
+                <p class="footer__link"><a href="#!">Help Center</a></p>
+                <p class="footer__link"><a href="#!">How it Works</a></p>
+              </div>
+
+              <div class="footer__community">
+                <p class="footer__community-p">Contact:</p>
+                <p><a href="#!">sayhello@messy.fm</a></p>
+
+                <div class="footer__social">
+                  <p class="footer__community-p">Community:</p>
+                  <a href="#!" class="footer__social-l"
+                    ><img src="img/fb.svg" alt="fb"
+                  /></a>
+                  <a href="#!" class="footer__social-l"
+                    ><img src="img/ig.svg" alt="ig"
+                  /></a>
+                  <a href="#!" class="footer__social-l"
+                    ><img src="img/ln.svg" alt="linkedin"
+                  /></a>
+                  <a href="#!"><img src="img/tw.svg" alt="twitter" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__bot-sec">
+            <div class="footer__copyrights">
+              (C) 2021 Messy.FM - All rights reserved
+            </div>
+            <div class="footer__policy">
+              <p><a href="#!">Terms of Service </a></p>
+              <p><a href="#!">Privacy Policy</a></p>
+            </div>
+          </div>
         </div>
-      </main>
-    </header>
+      </div>
+    </footer>
   </body>
 </html>

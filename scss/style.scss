@@ -7,6 +7,13 @@ body {
   font-family: $font-stack;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+}
+
 .navbar {
   border-bottom: 1px solid rgb(223, 226, 230);
 
@@ -75,6 +82,7 @@ body {
 }
 
 .main {
+  padding-top: 4rem;
   background-color: #eee;
 
   .main__container {
@@ -84,7 +92,7 @@ body {
   }
 
   .title {
-    padding: 3rem 2rem;
+    padding: 3rem 3rem;
   }
 
   .title__text {
@@ -153,11 +161,15 @@ body {
     min-width: 340px;
   }
 
-  .trendings__container {
-    padding: 1rem 2rem;
+  .trendings__container,
+  .shows__container,
+  .lastepisodes__container {
+    padding: 2rem 3rem;
   }
 
-  .trendings__title {
+  .trendings__title,
+  .shows__title,
+  .lastepisodes__title {
     margin-top: 0;
     margin-bottom: 0.5em;
     color: rgba(0, 0, 0, 0.85);
@@ -165,28 +177,37 @@ body {
     font-size: 1.5em;
   }
 
-  .trendings__cards {
+  .trendings__cards,
+  .shows__cards,
+  .lastepisodes__cards {
     display: grid;
-    gap: 30px 14px;
+    gap: 30px 23px;
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .trendings__card {
+  .trendings__card,
+  .shows__card,
+  .lastepisodes__card {
     grid-column: span 1;
   }
 
-  .trendings__card-cover {
+  .trendings__card-cover,
+  .shows__card-cover,
+  .lastepisodes__card-cover {
     height: 205px;
     width: 205px;
     position: relative;
   }
 
-  .trendings__img {
+  .trendings__img,
+  .shows__img,
+  .lastepisodes__img {
     width: inherit;
     height: inherit;
   }
 
-  .trendings__card-cover:hover .cover {
+  .trendings__card-cover:hover .cover,
+  .lastepisodes__card-cover:hover .cover {
     opacity: 1;
   }
 
@@ -212,12 +233,109 @@ body {
     filter: brightness(1);
   }
 
-  .trendings__card-desc {
+  .trendings__card-desc,
+  .shows__card-desc,
+  .lastepisodes__card-desc {
     margin-top: 5px;
     font-size: 14px;
   }
 
-  .trendings__card-desc:hover {
+  .trendings__card-desc:hover,
+  .shows__card-desc:hover,
+  .lastepisodes__card-desc:hover {
     color: rgb(81, 154, 238);
+  }
+
+  .shows__img:hover {
+    filter: brightness(0.5);
+  }
+
+  .lastepisodes {
+    position: relative;
+  }
+
+  button {
+    position: absolute;
+    top: 40%;
+    right: 1.5%;
+    display: inline;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .lastepisodes__container {
+    padding-bottom: 100px;
+  }
+}
+
+.footer {
+  background-color: rgb(35, 30, 41);
+  color: #fff;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .footer__container {
+    max-width: 1216px;
+    margin: 0 auto;
+  }
+
+  .footer__wrap {
+    padding: 2rem 3rem;
+  }
+
+  .footer__logo {
+    width: 130px;
+    margin-right: auto;
+    align-self: center;
+  }
+
+  .footer__img {
+    width: inherit;
+  }
+
+  .footer__top-sec {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__top-right {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  .footer__link {
+    margin-bottom: 20px;
+  }
+
+  .footer__community-p {
+    margin-bottom: 10px;
+  }
+
+  .footer__social {
+    margin-top: 50px;
+  }
+
+  .footer__social-l {
+    margin-right: 15px;
+  }
+
+  .footer__bot-sec {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__policy {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
   }
 }
