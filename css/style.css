@@ -242,7 +242,9 @@ body {
   border: 1px solid #dddddd;
 }
 .main input:focus,
-.main select:focus {
+.main select:focus,
+.main input:hover,
+.main select:hover {
   box-shadow: 0 0 5px #519aee;
   border: 1px solid #519aee;
 }
@@ -280,14 +282,44 @@ body {
 }
 .main .trendings__card {
   grid-column: span 1;
+}
+.main .trendings__card-cover {
+  height: 205px;
+  width: 205px;
   position: relative;
 }
 .main .trendings__img {
-  height: 205px;
-  width: 100%;
+  width: inherit;
+  height: inherit;
 }
-.main .trendings__img:hover {
-  filter: brightness(0.4);
+.main .trendings__card-cover:hover .cover {
+  opacity: 1;
+}
+.main .cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(66, 65, 65, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.25s linear;
+  opacity: 0;
+}
+.main .cover-img img {
+  filter: brightness(0.5);
+}
+.main .cover-img img:hover {
+  filter: brightness(1);
+}
+.main .trendings__card-desc {
+  margin-top: 5px;
+  font-size: 14px;
+}
+.main .trendings__card-desc:hover {
+  color: #519aee;
 }
 
 /*# sourceMappingURL=style.css.map */
