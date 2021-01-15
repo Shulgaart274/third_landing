@@ -146,6 +146,8 @@ body {
 .header {
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: 10;
   background-color: #fff;
 }
@@ -157,6 +159,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1152px;
   margin: 0 auto;
   height: 4rem;
@@ -167,6 +170,7 @@ body {
 .navbar .nav__menu-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .navbar .nav__menu-item {
   padding: 0 15px;
@@ -206,10 +210,64 @@ body {
 .navbar .nav__menu-link:hover {
   color: #4463ec;
 }
+@media screen and (max-width: 1025px) {
+  .navbar .nav__logo {
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .navbar .nav__img {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar .nav__logo {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: 20px;
+  }
+  .navbar .nav__menu {
+    margin-left: auto;
+  }
+  .navbar .nav__img {
+    height: 1rem;
+  }
+  .navbar .nav__menu-item {
+    padding: 0 2px;
+  }
+  .navbar .nav__menu-submenu-item {
+    padding: 5px;
+  }
+  .navbar .nav__menu-submenu-item:last-child {
+    margin-right: 10px;
+  }
+  .navbar .nav__menu-link {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 321px) {
+  .navbar .nav__logo {
+    margin-left: 0;
+  }
+  .navbar .nav__menu-item {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 319px) {
+  .navbar .nav__container {
+    justify-content: center;
+  }
+  .navbar .nav__logo {
+    margin: 0 auto;
+  }
+  .navbar .nav__menu {
+    margin-left: 0;
+  }
+}
 
 .main {
   padding-top: 4rem;
   background-color: #eee;
+  overflow: hidden;
 }
 .main .main__container {
   max-width: 1216px;
@@ -228,12 +286,9 @@ body {
 .main .title__form {
   display: flex;
   justify-content: space-between;
-}
-.main .input__first {
-  width: 65%;
+  flex-wrap: wrap;
 }
 .main .input__second {
-  width: 32%;
   display: flex;
   justify-content: flex-end;
 }
@@ -292,25 +347,25 @@ body {
 .main .lastepisodes__cards {
   display: grid;
   gap: 30px 23px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(10, 1fr);
 }
 .main .trendings__card,
 .main .shows__card,
 .main .lastepisodes__card {
-  grid-column: span 1;
+  grid-column: span 2;
 }
 .main .trendings__card-cover,
 .main .shows__card-cover,
 .main .lastepisodes__card-cover {
-  height: 205px;
-  width: 205px;
+  max-height: 205px;
+  max-width: 205px;
   position: relative;
 }
 .main .trendings__img,
 .main .shows__img,
 .main .lastepisodes__img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 205px;
 }
 .main .trendings__card-cover:hover .cover,
 .main .lastepisodes__card-cover:hover .cover {
@@ -320,6 +375,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background: rgba(66, 65, 65, 0.65);
   position: absolute;
   top: 0;
@@ -367,6 +423,81 @@ body {
 .main .lastepisodes__container {
   padding-bottom: 100px;
 }
+@media screen and (max-width: 1025px) {
+  .main .trendings__title,
+.main .shows__title,
+.main .lastepisodes__title {
+    text-align: center;
+  }
+  .main .trendings__cards,
+.main .shows__cards,
+.main .lastepisodes__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main .trendings__card,
+.main .shows__card,
+.main .lastepisodes__card {
+    grid-column: span 1;
+  }
+  .main .trendings__card-cover,
+.main .shows__card-cover,
+.main .lastepisodes__card-cover {
+    max-width: 601px;
+    max-height: 601px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main .title {
+    padding: 3rem 2rem;
+  }
+  .main .title__form {
+    justify-content: center;
+  }
+  .main #dropdown {
+    min-width: 150px;
+  }
+  .main #search {
+    min-width: 150px;
+  }
+  .main .trendings__title,
+.main .shows__title,
+.main .lastepisodes__title {
+    text-align: center;
+  }
+  .main .input__first {
+    padding-bottom: 15px;
+  }
+  .main .trendings__card,
+.main .shows__card,
+.main .lastepisodes__card {
+    grid-column: span 10;
+  }
+  .main .trendings__card-cover,
+.main .shows__card-cover,
+.main .lastepisodes__card-cover {
+    max-width: 601px;
+    max-height: 601px;
+  }
+  .main .trendings__card-desc,
+.main .shows__card-desc,
+.main .lastepisodes__card-desc {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 319px) {
+  .main .trendings__cards,
+.main .shows__cards,
+.main .lastepisodes__cards {
+    display: grid;
+    gap: 30px 23px;
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .main .trendings__card,
+.main .shows__card,
+.main .lastepisodes__card {
+    grid-column: span 9;
+  }
+}
 
 .footer {
   background-color: #231e29;
@@ -390,13 +521,15 @@ body {
 .footer .footer__img {
   width: inherit;
 }
-.footer .footer__top-sec {
+.footer .footer__top-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer .footer__top-right {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 40%;
 }
 .footer .footer__link {
@@ -411,16 +544,78 @@ body {
 .footer .footer__social-l {
   margin-right: 15px;
 }
-.footer .footer__bot-sec {
+.footer .footer__bot-section {
   margin-top: 55px;
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer .footer__policy {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 30%;
+}
+@media screen and (max-width: 1025px) {
+  .footer .footer__policy {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer .footer__logo {
+    margin: 0 auto;
+  }
+  .footer .footer__wrap {
+    padding: 1rem;
+  }
+  .footer .footer__top-right {
+    width: 45%;
+  }
+  .footer .footer__link {
+    margin-bottom: 5px;
+  }
+  .footer .footer__links {
+    margin-bottom: 15px;
+  }
+  .footer .footer__community-title {
+    margin-bottom: 5px;
+  }
+  .footer .footer__social {
+    margin-top: 30px;
+  }
+  .footer .footer__social-link {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .footer .footer__bot-section {
+    justify-content: center;
+  }
+  .footer .footer__policy {
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .footer a,
+.footer p,
+.footer div {
+    font-size: 14px;
+  }
+  .footer .footer__logo {
+    width: 110px;
+  }
+  .footer .footer__bot-section {
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .footer .footer__copyrights {
+    margin-bottom: 15px;
+  }
+  .footer .footer__policy {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
