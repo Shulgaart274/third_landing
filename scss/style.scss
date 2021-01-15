@@ -129,7 +129,14 @@ body {
 
   @media screen and (max-width: 321px) {
     .nav__logo {
-      margin-left: 0;
+      margin-left: 10px;
+    }
+    .nav__menu-submenu-item:last-child {
+      margin-right: 0px;
+    }
+
+    .nav__menu-item:last-child {
+      margin-right: 10px;
     }
 
     .nav__menu-item {
@@ -140,10 +147,16 @@ body {
   @media screen and (max-width: 319px) {
     .nav__container {
       justify-content: center;
+      margin-bottom: 10px;
     }
 
     .nav__logo {
       margin: 0 auto;
+      padding: 10px 0;
+    }
+
+    .nav__menu-item {
+      padding: 0 15px;
     }
 
     .nav__menu {
